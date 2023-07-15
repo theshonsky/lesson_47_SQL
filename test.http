@@ -1,0 +1,29 @@
+### GET products
+GET  http://localhost:8000/products
+
+### GET product by id
+GET  http://localhost:8000/products/1
+
+### POST product
+POST http://localhost:8000/products
+Content-Type: application/json
+
+{
+    "title": "Pro",
+    "price": 400
+}
+
+### PUT product
+PUT http://localhost:8000/products/4
+Content-Type: application/json
+
+{
+    "title": "Huawei",
+    "price": 4000
+}
+
+### DELETE product
+DELETE http://localhost:8000/products/2
+
+### GET products minmax
+GET  http://localhost:8000/products?priceMin=100&priceMax=400
